@@ -2,6 +2,8 @@ import './App.css';
 import AddFiles from './components/AddFiles';
 import './App.css';
 import ListFiles from './components/ListFiles';
+import SignIn from './composents/SignIn';
+import SignUp from './composents/SignUp';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
       <Routes>
           <Route path="/" element={<AddFiles />} />
           <Route path="/liste" element={<ListFiles />} />
+          <Route path="/SignIn" element={<SignIn />} />
+          <Route path="/SignUp" element={<SignUp />} />
           </Routes>
       </Router>
     </div>
